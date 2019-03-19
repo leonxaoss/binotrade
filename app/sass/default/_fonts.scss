@@ -1,0 +1,24 @@
+// Variables
+$fonts_1_r   : "Qanelas-Regular";
+$fonts_1_b   : "Qanelas-Bold";
+$fonts_1_m   : "Qanelas-Medium";
+
+// Fonts Array
+$fonts:(
+        $fonts_1_r,
+        $fonts_1_b,
+        $fonts_1_m
+);
+
+@each $font in $fonts {
+  @font-face{
+    font-family: $font;
+    src: url('#{$path_fonts}/#{$font}/#{$font}.eot');
+    src: url('#{$path_fonts}/#{$font}/#{$font}.eot?#iefix') format('embedded-opentype'),
+    url('#{$path_fonts}/#{$font}/#{$font}.woff2') format('woff2'),
+    url('#{$path_fonts}/#{$font}/#{$font}.woff') format('woff'),
+    url('#{$path_fonts}/#{$font}/#{$font}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}

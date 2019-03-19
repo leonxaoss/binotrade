@@ -1,0 +1,14 @@
+@import "default/_settings";
+@import "default/_fonts";
+
+@import "default/_default";
+
+// Blocks
+@import "block/_header";
+@import "block/_footer";
+
+// Pages
+@import "page/_home";
+
+// responsive
+@import "media/_media";
